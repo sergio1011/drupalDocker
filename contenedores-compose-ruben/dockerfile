@@ -1,0 +1,11 @@
+FROM mysql:latest
+WORKDIR /var/lib/mysql
+COPY . .
+RUN apt-get update && apt-get -y upgrade
+EXPOSE 3306
+
+FROM drupal:latest
+WORKDIR /opt/drupal
+COPY . .
+RUN apt-get update && apt-get -y upgrade
+EXPOSE 81
