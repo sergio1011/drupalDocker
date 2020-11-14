@@ -15,7 +15,7 @@ services:
   command: --default-authentication-plugin=mysql_native_password
   restart: always
   volumes:
-   - C:\Users\Francisco\DockerDespliegue\contenedores-compose:/var/lib/mysql
+   - C:\Users\usuario\DockerDespliegue\contenedores-compose-ruben:/var/lib/mysql
   environment:
    MYSQL_ROOT_PASSWORD: admin
    MYSQL_DATABASE: drupal
